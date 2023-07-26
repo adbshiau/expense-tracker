@@ -1,5 +1,10 @@
 const router = require("express").Router();
 const {
+  getExpenses,
+  addExpense,
+  deleteExpense,
+} = require("../controllers/expense");
+const {
   addIncome,
   getIncomes,
   deleteIncome,
@@ -8,6 +13,9 @@ const {
 router
   .post("/add-income", addIncome)
   .get("/get-incomes", getIncomes)
-  .delete("/delete-income/:id", deleteIncome);
+  .delete("/delete-income/:id", deleteIncome)
+  .post("/add-expense", addExpense)
+  .get("/get-expenses", getExpenses)
+  .delete("/delete-expense/:id", deleteExpense);
 
 module.exports = router;
