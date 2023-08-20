@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    background-color: red;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: rgba(34, 34, 96, .6);
 }
 `;
